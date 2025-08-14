@@ -1,0 +1,14 @@
+# Fichiers générés par Next.js
+.next/
+out/
+build/
+
+# Variables d'environnement
+.env.local
+.env.*.local
+
+# Dépendances
+node_modules/
+
+# Autres fichiers inutiles
+*.node

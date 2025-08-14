@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Tokens === */
+:root{
+  --brand-primary:#1e3a8a;
+  --brand-primary-light:#3b82f6;
+  --brand-accent:#0ea5e9;
+
+  --bg-muted:#F6F8FB;
+  --card-border:#E6EAF2;
+  --title:#0E2F6D;
+}
+
+/* === Composants utilitaires === */
+@layer components{
+  /* Carte générique */
+  .card{ @apply bg-white rounded-xl border shadow-sm; border-color:var(--card-border); }
+
+  /* En-tête “bandeau bleu” des cards dashboard */
+  .card-gradient{
+    background:linear-gradient(135deg, var(--brand-primary) 0%, #1e40af 100%);
+  }
+
+  /* Titres sections de la sidebar */
+  .sidebar-title{ @apply px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-gray-500; }
+
+  /* Séparateur fin */
+  .sidebar-divider{ @apply my-2 h-px bg-gray-200; }
+
+  /* Espacement vertical standard entre items */
+  .sidebar-list{ @apply space-y-1.5; }
+
+  /* Cartes dashboard (wrapper) */
+  .dashboard-card{ @apply card overflow-hidden transition-all duration-200 hover:shadow-md; }
+  @layer components {
+    .sidebar-title{
+      @apply px-4 py-2 text-[11px] font-semibold uppercase tracking-wider text-gray-500;
+    }
+    .sidebar-divider{ @apply my-2 h-px bg-gray-200; }
+    .sidebar-list{ @apply space-y-1.5; }
+  
+    /* Bandeau bleu des cards */
+    .card-gradient{
+      background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    }
+    .dashboard-card{ @apply bg-white rounded-xl border shadow-sm overflow-hidden transition-all duration-200 hover:shadow-md; }
+  }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "MVfklycwRhSxXVEyl8rMw",
+    "agentId": "lefebvre",
+    "title": "Échanges amicaux et salutations quotidiennes",
+    "messages": [
+      {
+        "role": "user",
+        "content": "salut ca va ?"
+      },
+      {
+        "role": "assistant",
+        "content": "Bonjour ! Je vais bien, merci. Comment puis-je vous aider aujourd'hui ?"
+      }
+    ],
+    "createdAt": "2025-08-12T16:19:07.568Z",
+    "updatedAt": "2025-08-12T16:19:15.162Z"
+  }
+]

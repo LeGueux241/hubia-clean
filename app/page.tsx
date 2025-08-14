@@ -8,7 +8,7 @@ export default function Page() {
       {/* Welcome Section */}
       <div className="mb-8">
         <p className="text-gray-600 leading-relaxed">
-          Bonjour Jean Michel, bienvenue dans votre hub IA Lefebvre Dalloz. Retrouvez tous vos outils pour gagner du temps
+          Bonjour Jean luc, bienvenue dans votre hub IA Lefebvre Dalloz. Retrouvez tous vos outils pour gagner du temps
         </p>
       </div>
 
@@ -29,12 +29,15 @@ export default function Page() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <AgentCard 
-            title="Agent commercial Lefebvre Dalloz" 
+            title="Agent commercial Lefebvre Dalloz"
+            href="/agents/lefebvre" 
             desc="C'est agent est spécialisé sur les question concernant Lefebvre Dalloz"
             agentType="Agent Lefebvre"
+            
           />
           <AgentCard 
             title="On boarding chez Lefebvre" 
+            href="/agents/onboarding"
             desc="vous venez de rentrer chez Lefbvre ? Découvrez comment fonctionne l'entreprise"
             agentType="Agent On Boarding"
           />
@@ -50,11 +53,13 @@ export default function Page() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <AgentCard 
             title="Agent de rédaction Newsletter" 
+            href="/agents/newsletter"
             desc="Rédacteur de la NL - Bimensuel par Eléonore"
             agentType="Agent Newsletter"
           />
           <AgentCard 
             title="Rédacteur post LinkedIn" 
+            href="/agents/linkedin"
             desc="Rédacteur post hebdomadaire par Charlotte"
             agentType="Agent LinkedIn"
           />

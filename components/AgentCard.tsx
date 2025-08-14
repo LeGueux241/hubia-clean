@@ -2,15 +2,27 @@ export function AgentCard({
   title,
   desc,
   agentType = "Agent Lefebvre",
+  href,
 }: {
   title: string;
   desc: string;
   agentType?: string;
+  href?: string;
 }) {
+  const Wrapper = href ? 'a' : 'div';
+
   return (
-    <div className="dashboard-card group cursor-pointer">
+    <Wrapper
+      {...(href
+        ? {
+            href,
+            style: { textDecoration: 'none', color: 'inherit' },
+          }
+        : {})}
+      className="dashboard-card group cursor-pointer block rounded-xl border hover:shadow-lg transition"
+    >
       {/* Bandeau bleu */}
-      <div className="card-gradient text-white px-6 py-4">
+      <div className="card-gradient text-white px-6 py-4 rounded-t-xl">
         <div className="text-lg font-bold">Lefebvre Dalloz</div>
         <div className="text-sm opacity-90">{agentType}</div>
       </div>
@@ -29,6 +41,6 @@ export function AgentCard({
           <div><span className="font-medium text-blue-600">Dernière exécution:</span> 24 juillet 2025</div>
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 }

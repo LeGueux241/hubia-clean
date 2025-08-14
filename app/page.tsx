@@ -8,7 +8,7 @@ export default function Page() {
       {/* Welcome Section */}
       <div className="mb-8">
         <p className="text-gray-600 leading-relaxed">
-          Bonjour Benoit, bienvenue dans votre hub IA Lefebvre Dalloz. Retrouvez tous vos outils pour gagner du temps
+          Bonjour Jean Michel, bienvenue dans votre hub IA Lefebvre Dalloz. Retrouvez tous vos outils pour gagner du temps
         </p>
       </div>
 
